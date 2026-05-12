@@ -1,4 +1,5 @@
 $blue: #038aff;
+$blue-hover: #2498ff;
 $navy: #161348;
 $green: #5ccaa7;
 $yellow: #febd3b;
@@ -16,6 +17,8 @@ $footer-bg: $navy;
 
 $primary: $blue;
 $body-color: $text-heading;
+
+/* Base */
 
 body {
   background-color: $body-bg;
@@ -48,6 +51,8 @@ img {
   cursor: pointer;
 }
 
+/* Buttons */
+
 .btn-light {
   background-color: $white;
   color: $text-button-dark;
@@ -57,10 +62,28 @@ img {
   font-weight: 600;
 }
 
-.btn-light:hover {
-  background-color: $white;
+.btn-light:hover,
+.hero-btn:hover,
+.footer-doc-btn:hover {
+  background-color: #f4f7fb;
   color: $text-button-dark;
+  text-decoration: none;
 }
+
+.faq-secondary-btn:hover {
+  background-color: #f4f7fb;
+  color: $text-heading;
+  text-decoration: none;
+}
+
+.faq-primary-btn:hover,
+.footer-purchase-btn:hover {
+  background-color: $blue-hover;
+  color: $white;
+  text-decoration: none;
+}
+
+/* Navbar */
 
 .navbar {
   background-color: transparent;
@@ -86,6 +109,19 @@ img {
   color: $text-light;
 }
 
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .buy-now-btn,
 .hero-btn,
 .middle-bar-btn,
@@ -100,6 +136,8 @@ img {
   width: 16px;
   height: 16px;
 }
+
+/* Hero */
 
 .hero-section {
   position: relative;
@@ -148,10 +186,6 @@ img {
   height: 14px;
 }
 
-.hero-btn:hover {
-  color: $text-button-dark;
-}
-
 .trusted-by {
   margin-top: 2rem;
 }
@@ -171,6 +205,8 @@ img {
   max-width: 560px;
 }
 
+/* Features */
+
 .features-section {
   background-color: $white;
   position: relative;
@@ -186,6 +222,15 @@ img {
   margin-bottom: 0;
 }
 
+.feature-row h2,
+.feature-row p {
+  max-width: 85%;
+}
+
+.feature-row p {
+  margin-top: 0;
+}
+
 .feature-image-wrapper {
   position: relative;
   border-radius: 4px;
@@ -195,6 +240,36 @@ img {
 .feature-image {
   width: 100%;
   border-radius: 4px;
+}
+
+.feature-project-wrapper {
+  position: relative;
+  width: 75%;
+}
+
+.feature-floating-video {
+  position: absolute;
+  top: -40px;
+  right: -120px;
+  width: 75%;
+  z-index: 2;
+}
+
+.feature-floating-video .feature-image-wrapper {
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.feature-floating-video .play-video-btn {
+  top: 24px;
+  left: auto;
+  right: 24px;
+}
+
+.floating-video-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  width: 100%;
 }
 
 .play-video-btn {
@@ -241,10 +316,6 @@ img {
   color: $white;
 }
 
-.features-section p {
-  margin-top: 0;
-}
-
 .store-buttons {
   display: flex;
   align-items: center;
@@ -261,6 +332,8 @@ img {
   width: auto;
   display: block;
 }
+
+/* Middle bar */
 
 .middle-bar-section {
   margin: 8rem 0;
@@ -290,8 +363,10 @@ img {
   height: 14px;
 }
 
+/* Awards */
+
 .awards-section {
-  background-color: $white;
+  background-color: #fafbff;
   padding: 0 0 6rem;
 }
 
@@ -313,6 +388,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -323,6 +399,7 @@ img {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
   border-color: rgba(3, 138, 255, 0.15);
+  text-decoration: none;
 }
 
 .award-logo {
@@ -388,6 +465,8 @@ img {
 .award-offset-5 {
   margin-top: 80px;
 }
+
+/* FAQ */
 
 .faq-section {
   background-color: $white;
@@ -477,11 +556,6 @@ img {
   height: 14px;
 }
 
-.faq-primary-btn:hover {
-  background-color: $blue;
-  color: $white;
-}
-
 .faq-secondary-btn {
   background-color: $white;
   color: $text-heading;
@@ -490,9 +564,7 @@ img {
   padding: 0.85rem 1.5rem;
 }
 
-.faq-secondary-btn:hover {
-  color: $text-heading;
-}
+/* Footer */
 
 .footer {
   position: relative;
@@ -563,21 +635,11 @@ img {
   height: 16px;
 }
 
-.footer-doc-btn:hover {
-  background-color: $white;
-  color: $text-button-dark;
-}
-
 .footer-purchase-btn {
   background-color: $blue;
   color: $white;
   border-radius: 4px;
   padding: 0.85rem 1.5rem;
-}
-
-.footer-purchase-btn:hover {
-  background-color: $blue;
-  color: $white;
 }
 
 .footer-logo {
@@ -605,11 +667,6 @@ img {
 .footer a {
   color: $text-light;
   text-decoration: none;
-}
-
-.footer a:hover {
-  color: $text-light;
-  text-decoration: underline;
 }
 
 .footer-links-wrapper {
@@ -656,6 +713,8 @@ img {
   color: $white;
 }
 
+/* Responsive */
+
 @media (max-width: 991px) {
   h2 {
     font-size: 2.125rem;
@@ -688,6 +747,27 @@ img {
     margin-bottom: 6rem;
   }
 
+  .feature-row h2,
+  .feature-row p {
+    max-width: 100%;
+  }
+
+  .feature-project-wrapper {
+    width: 100%;
+  }
+
+  .feature-floating-video {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .feature-floating-video .play-video-btn {
+    right: 24px;
+  }
+
   .middle-bar {
     padding: 3rem;
   }
@@ -698,6 +778,12 @@ img {
 
   .awards-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .award-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #e9edf5;
   }
 
   .award-offset-1,
@@ -757,10 +843,14 @@ img {
   }
 
   .store-buttons,
-  .faq-cta-buttons,
   .footer-top-buttons {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .faq-cta-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
   .awards-grid {
@@ -769,6 +859,16 @@ img {
 
   .award-card {
     min-height: auto;
+  }
+
+  .award-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #e9edf5;
+  }
+
+  .faq-section .row.gy-4 {
+    --bs-gutter-y: 0;
   }
 
   .accordion-button {
@@ -784,70 +884,4 @@ img {
     flex-direction: column;
     gap: 3rem;
   }
-}
-.feature-project-wrapper {
-  position: relative;
-  width: 75%;
-}
-
-.feature-floating-video {
-  position: absolute;
-  top: -40px;
-  right: -120px;
-  width: 75%;
-  z-index: 2;
-}
-.feature-floating-video .feature-image-wrapper {
-  position: relative;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-}
-
-.feature-floating-video .play-video-btn {
-  top: 24px;
-  left: auto;
-  right: 24px;
-}
-
-@media (max-width: 991px) {
-  .feature-project-wrapper {
-    width: 100%;
-  }
-
-  .feature-floating-video {
-    position: relative;
-    top: auto;
-    right: auto;
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .feature-floating-video .play-video-btn {
-    right: 24px;
-  }
-}
-.floating-video-image {
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  width: 100%;
-}
-.awards-section {
-  background-color: #fafbff;
-  padding: 0 0 6rem;
-}
-.navbar-toggler {
-  border: none;
-  box-shadow: none !important;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.feature-row h2,
-.feature-row p,
-.feature-row .eyebrow-tag {
-  max-width: 85%;
 }
