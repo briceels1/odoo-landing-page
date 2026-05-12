@@ -31,7 +31,7 @@ Also deployed on vercel: https://odoo-landing-page-beta.vercel.app/
 - Too many different colors and no relation building with the colors used, too many different types of buttons and also random placement of icons. 
 - Too many different icons used when it's not necessary.
 - The features section is a bit too heavy because of the videos and their placement
-- For a SaaS page there is no storytelling or normal structure like intro, problem definiton, solution,...
+- For a SaaS page there is no storytelling or normal structure like intro, problem definition, solution,...
 - Too many different CTAs.
 - In general the page would be better with a design system implemented from the start in the design and not in development.
 
