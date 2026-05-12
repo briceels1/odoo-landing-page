@@ -1,0 +1,38 @@
+# Odoo Landing Page
+
+Static landing page built as part of a front-end assignment.
+
+## Stack
+
+- HTML5
+- Bootstrap 5.3
+- SCSS (compiled to CSS)
+- No JavaScript frameworks — Bootstrap bundle handles accordion and navbar toggle
+
+## Structure
+
+project/
+├── index.html
+├── css/
+│   └── main.css
+├── scss/
+│   └── main.scss
+└── images/
+
+## How to run
+
+Open `index.html` in a browser. No build step needed for the HTML/CSS.
+
+
+## Notes on the design
+
+Design was followed for development but in general the design is missing alot of things that a good design has:
+Too many different colors and no relation building with the colors used, too many different types of buttons and also random placement of icons. 
+Too many different icons used when it's not necessary.
+The features section is a bit too heavy because of the video's and their placement
+For a SaaS page there is no storytelling or normal structure like intro, problem definiton, solution,...
+Too many different CTA's.
+In general the page would be better with a design system implemented from the start in the design and not in development.
+
+
+
