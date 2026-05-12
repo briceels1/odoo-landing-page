@@ -1,13 +1,13 @@
 # Odoo Landing Page
 
-Static landing page built as part of a front-end assignment.
+Landing page made for Odoo assignment
 
 ## Stack
 
 - HTML5
 - Bootstrap 5.3
 - SCSS (compiled to CSS)
-- No JavaScript frameworks — Bootstrap bundle handles accordion and navbar toggle
+- Bootstrap bundle handles accordion and navbar toggle
 
 ## Structure
 
@@ -22,6 +22,7 @@ project/
 ## How to run
 
 Open `index.html` in a browser. No build step needed for the HTML/CSS.
+Also deployed on vercel: https://odoo-landing-page-beta.vercel.app/
 
 
 ## Notes on the design
