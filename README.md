@@ -27,13 +27,13 @@ Also deployed on vercel: https://odoo-landing-page-beta.vercel.app/
 
 ## Notes on the design
 
-Design was followed for development but in general the design is missing alot of things that a good design has:
-Too many different colors and no relation building with the colors used, too many different types of buttons and also random placement of icons. 
-Too many different icons used when it's not necessary.
-The features section is a bit too heavy because of the video's and their placement
-For a SaaS page there is no storytelling or normal structure like intro, problem definiton, solution,...
-Too many different CTA's.
-In general the page would be better with a design system implemented from the start in the design and not in development.
+- Design was followed for development but in general the design is missing alot of things that a good design has
+- Too many different colors and no relation building with the colors used, too many different types of buttons and also random placement of icons. 
+- Too many different icons used when it's not necessary.
+- The features section is a bit too heavy because of the video's and their placement
+- For a SaaS page there is no storytelling or normal structure like intro, problem definiton, solution,...
+- Too many different CTA's.
+- In general the page would be better with a design system implemented from the start in the design and not in development.
 
 
 
